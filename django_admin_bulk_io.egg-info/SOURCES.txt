@@ -3,6 +3,7 @@ README.rst
 pyproject.toml
 setup.py
 django_admin_bulk_io/__init__.py
+django_admin_bulk_io/admin.py
 django_admin_bulk_io/apps.py
 django_admin_bulk_io/models.py
 django_admin_bulk_io/serializer.py
