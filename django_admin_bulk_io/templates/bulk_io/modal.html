@@ -1,0 +1,53 @@
+{%load bulk_io_urls_list%}
+<div class="modal fade" id="bulkIoAdminModalRead" tabindex="0" aria-labelledby="bulkIoAdminModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="bulkIoAdminModalLabel">
+                    Bulk IO Import
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="file" accept=".csv, .json" name="file" id="bulk-io-fileinput-import"
+                    class="form-control" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-modal btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn-modal btn-primary"
+                    onclick="bulkIOImport(event, `{% bulk_io_url opts.app_label opts.model_name '%s_%s_bulk_import'%}`,'#bulk-io-fileinput-import')">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="bulkIoAdminModalValidate" tabindex="0" aria-labelledby="bulkIoAdminModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="bulkIoAdminModalLabel">
+                    Bulk IO Validate
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="file" accept=".csv, .json" name="file" id="bulk-io-fileinput-validate"
+                    class="form-control" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-modal btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn-modal btn-primary"
+                    onclick="bulkIOImport(event, `{% bulk_io_url opts.app_label opts.model_name '%s_%s_bulk_validate'%}`,'#bulk-io-fileinput-validate')">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
