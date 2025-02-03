@@ -1,4 +1,6 @@
 LICENSE
+MANIFEST.in
+README.md
 README.rst
 pyproject.toml
 setup.py

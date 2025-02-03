@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-admin-bulk-io
-Version: 1.1
+Version: 1.2
 Summary: This package allows you to import and export data in your Django admin.
 Home-page: https://github.com/mohitprajapat2001/django-admin-bulk-io
 Author: Mohit Prajapat

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-admin-bulk-io",
-    version="1.1",
+    version="1.2",
     description="This package allows you to import and export data in your Django admin.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -11,6 +11,9 @@ setup(
     url="https://github.com/mohitprajapat2001/django-admin-bulk-io",
     packages=find_packages(),
     include_package_data=True,
+    package_data={
+        "templates": ["**/*.tpt", "**/*.tpt.sample"],
+    },
     install_requires=["django>=5.1", "djangorestframework>=3.15.2", "pandas>=2.2.3"],
     classifiers=[
         "Framework :: Django",

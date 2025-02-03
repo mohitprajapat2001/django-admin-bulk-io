@@ -1,0 +1,10 @@
+include *.sh
+recursive-include bin *.sh
+
+recursive-include templates *.tpt *.tpt.sample
+
+include config/*.ini
+include config/*.ini.sample
+
+include LICENSE
+include README.md
